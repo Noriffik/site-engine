@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.IO;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Logging;
 
 namespace ThinkingHome.SiteEngine
@@ -31,6 +29,12 @@ namespace ThinkingHome.SiteEngine
             }
 
             app.UseMvc(ConfigureRoutes);
+
+            app.UseStaticFiles(new StaticFileOptions()
+            {
+                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"content"))
+            });
+
             app.UseStaticFiles();
             app.UseStatusCodePages();
         }
@@ -43,10 +47,10 @@ namespace ThinkingHome.SiteEngine
                 defaults: new { controller = "Home", action = "Index" });
 
             routes.MapRoute(
-                name: "info",
-                template: "info/{*path}",
+                name: "md",
+                template: "{*path}",
                 defaults: new { controller = "Home", action = "Info" },
-                constraints: new { path = ".*[.]md" }
+                constraints: new { path = ".+[.]md" }
             );
         }
     }
