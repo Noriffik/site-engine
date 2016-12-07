@@ -49,7 +49,7 @@ namespace ThinkingHome.SiteEngine
             routes.MapRoute(
                 name: "md",
                 template: "{*path}",
-                defaults: new { controller = "Home", action = "Info" },
+                defaults: new { controller = "Home", action = "Md" },
                 constraints: new { path = ".+[.]md" }
             );
         }

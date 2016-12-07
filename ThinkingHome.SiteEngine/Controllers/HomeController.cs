@@ -16,14 +16,15 @@ namespace ThinkingHome.SiteEngine.Controllers
 
         public ActionResult Index()
         {
-            return Content("index<script src=\"js/bootstrap.js\"></script>", "text/html");
+            return View();
         }
 
-        public ActionResult Info(string path)
+        public ActionResult Md(string path)
         {
             var serverPath = Path.Combine(_appEnvironment.ContentRootPath, "content", path);
-            var content = System.IO.File.ReadAllText(serverPath);
-            return Content(CommonMark.CommonMarkConverter.Convert(content), "text/html");
+            var md = System.IO.File.ReadAllText(serverPath);
+            var content = CommonMark.CommonMarkConverter.Convert(md);
+            return View((object)content);
         }
     }
 }
