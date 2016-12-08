@@ -2,6 +2,7 @@
 using System.IO;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using ThinkingHome.SiteEngine.Helpers;
 
 namespace ThinkingHome.SiteEngine.Controllers
 {
@@ -23,7 +24,7 @@ namespace ThinkingHome.SiteEngine.Controllers
         {
             var serverPath = Path.Combine(_appEnvironment.ContentRootPath, "content", path);
             var md = System.IO.File.ReadAllText(serverPath);
-            var content = CommonMark.CommonMarkConverter.Convert(md);
+            var content = MarkdownHelper.ConvertToHtml(md);
             return View((object)content);
         }
     }
