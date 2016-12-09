@@ -24,7 +24,7 @@ namespace ThinkingHome.SiteEngine.Controllers
         {
             var serverPath = Path.Combine(_appEnvironment.ContentRootPath, "content", path);
             var md = System.IO.File.ReadAllText(serverPath);
-            var content = MarkdownHelper.ConvertToHtml(md);
+            var content = Markdown.ConvertToHtml(md);
             return View((object)content);
         }
     }

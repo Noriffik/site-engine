@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using ThinkingHome.SiteEngine.Helpers
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -26,7 +28,18 @@
         <i class="fa fa-2x fa-bars"></i>
       </a>
     </div>
+    <div class="col-md-8 hidden-sm hidden-xs js-menu">
+      <ul class="nav nav-pills pull-right">
+        @foreach (var item in Navigation.GetItems(Context.Request))
+        {
+            var cssClass = item.selected ? "active" : "";
 
+            <li class="@cssClass">
+              <a href="@item.url">@item.content</a>
+            </li>
+        }
+      </ul>
+    </div>
   </div>
 
   @RenderBody()

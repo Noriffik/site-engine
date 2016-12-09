@@ -8,11 +8,11 @@ using CommonMark.Syntax;
 
 namespace ThinkingHome.SiteEngine.Helpers
 {
-    public static class MarkdownHelper
+    public static class Markdown
     {
         private static readonly CommonMarkSettings settings;
 
-        static MarkdownHelper()
+        static Markdown()
         {
             settings = CommonMarkSettings.Default.Clone();
             settings.OutputFormat = OutputFormat.CustomDelegate;
