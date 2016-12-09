@@ -22,3 +22,28 @@ code {
     color: #3182bd;
     background-color: #EFF4F8;
 }
+
+.ths-site-header {
+    margin: 20px -15px 26px -15px;
+}
+
+.ths-site-header > div {
+    margin-bottom: 4px;
+}
+
+.ths-logo {
+    height: 40px;
+    line-height: 40px;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none !important;
+}
+
+.ths-brand-name {
+    color: #808080 !important;
+}
+
+.ths-brand-name span {
+    color: #5d9bd1;
+}

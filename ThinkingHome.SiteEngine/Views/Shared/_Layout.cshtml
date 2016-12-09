@@ -7,20 +7,34 @@
 
   <title>@ViewData["Title"]</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&subset=cyrillic" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&subset=cyrillic" rel="stylesheet"/>
   <link href="~/css/bootstrap.min.css" rel="stylesheet"/>
   <link href="~/css/font-awesome.min.css" rel="stylesheet"/>
   <link href="~/css/highlight.css" rel="stylesheet"/>
   <link href="~/css/site.css" rel="stylesheet"/>
 </head>
 <body>
-  <div class="container">
-    @RenderBody()
-    <hr />
-    <footer>
-      <p>&copy; 2013 &ndash; @DateTime.Now.Year Thinking-Home.RU</p>
-    </footer>
+<div class="container">
+  <div class="row ths-site-header">
+    <div class="col-md-4">
+      <a class="ths-logo" href="@Url.Action("Index", "Home")">
+        <span class="ths-brand-name">Thinking-Home.</span>
+        <span class="ths-product-name">System</span>
+      </a>
+
+      <a class="btn btn-default pull-right hidden-md hidden-lg js-btn-menu">
+        <i class="fa fa-2x fa-bars"></i>
+      </a>
+    </div>
+
   </div>
+
+  @RenderBody()
+  <hr/>
+  <footer>
+    <p>&copy; 2013 &ndash; @DateTime.Now.Year Thinking-Home.RU</p>
+  </footer>
+</div>
 <script src="~/js/highlight.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 </body>
