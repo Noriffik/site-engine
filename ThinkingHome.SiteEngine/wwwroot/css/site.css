@@ -1,6 +1,7 @@
 ﻿body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
+    color: #444;
 }
 
 p {
@@ -9,7 +10,7 @@ p {
 }
 
 h1, h2, h3 {
-    font-weight: 400;
+    font-weight: 700;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -46,4 +47,41 @@ code {
 
 .ths-brand-name span {
     color: #5d9bd1;
+}
+
+.carousel-control,
+.carousel-control {
+    background-image: none !important;
+    width: 6%;
+}
+
+.ths-carousel {
+    margin-bottom: 42px;
+}
+
+.ths-slide {
+    height: 320px;
+    background-color: #438bc9;
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 22px 6%;
+}
+
+.ths-slide-content {
+
+}
+
+.ths-slide-caption {
+    font-size: 2.6em;
+}
+
+.ths-index-icon {
+    margin-top: 20px;
+    color: #333;
+}
+
+.ths-index-scheme {
+    margin: 32px auto;
+    display: block;
 }

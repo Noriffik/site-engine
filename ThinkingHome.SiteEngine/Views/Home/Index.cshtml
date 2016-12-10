@@ -2,5 +2,110 @@
     ViewBag.Title = "index";
 }
 
-<h1>index</h1>
-<p>123</p>
+<div class="carousel slide ths-carousel" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active ths-slide">
+      <div class="ths-slide-content">
+        <div class="ths-slide-caption">Управляй домом!</div>
+        <div class="ths-slide-description">Можно писать сценарии</div>
+      </div>
+    </div>
+    <div class="item ths-slide">
+      <div>
+        <div class="ths-slide-caption">Автоматизируй!</div>
+        <div class="ths-slide-description">Можно писать сценарии</div>
+      </div>
+    </div>
+    <div class="item ths-slide">
+      <img src="..." alt="...">
+      <div class="carousel-caption">
+        sdfsdfsdfsdfsdf1111111
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <p class="lead">
+      ThinkingHome - это платформа для домашней автоматизации. С ее помощью вы можете организовать на своем
+      компьютере управляющий центр умного дома.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-1">
+    <span class="fa fa-3x fa-sitemap ths-index-icon pull-right"></span>
+  </div>
+  <div class="col-md-5">
+    <h2>Управление по сценариям</h2>
+    <p>
+      Система позволяет управлять домом по сценариям, т.е. назначать на различные события в доме
+      произвольную логику по управлению домашними устройствами. Событие - это срабатывание датчика,
+      сигнал с таймера, нажатие на кнопку или, например, получение сообщения в твиттере. При возникновении
+      события запускаются сценарии - небольшие программы, которые могут управлять домашними устройствами.
+      Например, сценарий может проверить температуру в доме и включить теплый пол, если нужно.
+    </p>
+  </div>
+  <div class="col-md-1">
+    <span class="fa fa-3x fa-tablet ths-index-icon pull-right"></span>
+  </div>
+  <div class="col-md-5">
+    <h2>Управление через веб-интерфейс</h2>
+    <p>
+      Веб-интерфейс доступен с любого устройства (компьютера, планшета или смартфона), подключенного к вашей
+      домашней сети. Он отображает информацию, нужную вам в повседневной жизни (например, расписание автобусов
+      или прогноз погоды), а также дает возможность удаленно управлять вашим домом или менять настройки системы.
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <h2>Как это работает?</h2>
+    <img class="img-responsive ths-index-scheme" src="~/images/scheme.png" />
+
+    <h2>Плагины</h2>
+    <p>
+      Система ThinkingHome имеет систему плагинов. При помощи плагинов можно расширять список возможных событий
+      в системе (например, генерировать событие при срабатывании датчика движения) и взаимодействовать с любыми
+      устройствами (например, с системой nooLite) или сервисами (например, с сервером электронной почты).
+    </p>
+    <p>
+      По большому счету, весь функционал системы находится в плагинах, а сервис содержит только инфраструктуру
+      для их работы. Он обеспечивает загрузку плагинов и организует их жизненный цикл, а также предоставляет им
+      средства для логирования, для работы с внутренней БД, для взаимодействия друг с другом (плагины могут
+      подписываться на события друг друга и вызывать команды друг друга).
+    </p>
+    <p>
+      Если вам не хватает в системе каких-то возможностей или нужно работать с нестандартными устройствами
+      (например, с собранными самостоятельно на основе Arduino) - просто напишите собственный плагин для системы.
+      Плагины могут работать с любыми устройствами и сервисам, с которыми может работать компьютер. Писать
+      собственные плагины <a href="~/plugins.md">очень просто</a>!
+    </p>
+    <h2>Что дальше?</h2>
+    <p>
+      Перейдите в раздел <a href="~/getting-started.md">С чего начать</a> в котором рассказано, как установить систему,
+      как работать с веб-интерфейсом  и как написать простой сценарий.
+    </p>
+
+  </div>
+</div>
