@@ -2,6 +2,7 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color: #444;
+    padding: 4px;
 }
 
 p {
@@ -24,6 +25,11 @@ code {
     background-color: #EFF4F8;
 }
 
+img {
+    max-width: 100%;
+    padding-bottom: 8px;
+}
+
 .ths-site-header {
     margin: 20px -15px 26px -15px;
 }
@@ -35,10 +41,16 @@ code {
 .ths-logo {
     height: 40px;
     line-height: 40px;
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none !important;
+}
+
+@media (max-width: 480px) {
+    .ths-logo {
+        font-size: 21px;
+    }
 }
 
 .ths-brand-name {
@@ -68,10 +80,6 @@ code {
     padding: 22px 6%;
 }
 
-.ths-slide-content {
-
-}
-
 .ths-slide-caption {
     font-size: 2.6em;
 }
@@ -84,4 +92,39 @@ code {
 .ths-index-scheme {
     margin: 32px auto;
     display: block;
+}
+
+
+@media screen and (max-width: 991px) {
+    .nav-pills {
+        margin-left: -15px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .nav-pills {
+        margin-left: 0;
+    }
+
+    .nav-pills > li {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .nav-pills > li {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    .opened-nav-menu {
+        display: block !important;
+        margin-top: 8px;
+    }
+
+    .opened-nav-menu .nav-pills {
+        float: none !important;
+    }
 }

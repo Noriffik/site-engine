@@ -22,6 +22,11 @@ namespace ThinkingHome.SiteEngine.Controllers
 
         public ActionResult Md(string path)
         {
+            if (string.IsNullOrEmpty(path))
+            {
+                path = "readme.md";
+            }
+
             var serverPath = Path.Combine(_appEnvironment.ContentRootPath, "content", path);
             var md = System.IO.File.ReadAllText(serverPath);
             var content = Markdown.ConvertToHtml(md);

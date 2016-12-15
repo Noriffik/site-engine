@@ -49,7 +49,7 @@ namespace ThinkingHome.SiteEngine
             routes.MapRoute(
                 name: "home",
                 template: string.Empty,
-                defaults: new { controller = "Home", action = "Index" });
+                defaults: new { controller = "Home", action = "Md" });
 
             routes.MapRoute(
                 name: "md",

@@ -9,7 +9,6 @@
 
   <title>@ViewData["Title"]</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&subset=cyrillic" rel="stylesheet"/>
   <link href="~/css/bootstrap.min.css" rel="stylesheet"/>
   <link href="~/css/font-awesome.min.css" rel="stylesheet"/>
   <link href="~/css/highlight.css" rel="stylesheet"/>
@@ -19,7 +18,7 @@
 <div class="container">
   <div class="row ths-site-header">
     <div class="col-md-4">
-      <a class="ths-logo" href="@Url.Action("Index", "Home")">
+      <a class="ths-logo" href="@Url.Action("Md", "Home")">
         <span class="ths-brand-name">Thinking-Home.</span>
         <span class="ths-product-name">System</span>
       </a>
@@ -51,6 +50,10 @@
 <script src="~/js/jquery.min.js"></script>
 <script src="~/js/bootstrap.js"></script>
 <script src="~/js/highlight.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+<script>
+    hljs.initHighlightingOnLoad();
+
+    $(function() { $('.js-btn-menu').click(function() { $('.js-menu').toggleClass('opened-nav-menu'); }); });
+</script>
 </body>
 </html>
