@@ -1,5 +1,5 @@
 ﻿body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: sans-serif;
     font-size: 16px;
     color: #444;
     padding: 4px;
@@ -11,8 +11,8 @@ p {
 }
 
 h1, h2, h3 {
-    font-weight: 700;
-    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-family: sans-serif;
 }
 
 pre {
@@ -31,7 +31,7 @@ img {
 }
 
 .ths-site-header {
-    margin: 20px -15px 26px -15px;
+    margin: 20px -15px;
 }
 
 .ths-site-header > div {
@@ -42,8 +42,8 @@ img {
     height: 40px;
     line-height: 40px;
     font-size: 26px;
-    font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-family: sans-serif;
     text-decoration: none !important;
 }
 
@@ -61,27 +61,27 @@ img {
     color: #5d9bd1;
 }
 
-.carousel-control,
-.carousel-control {
-    background-image: none !important;
-    width: 6%;
-}
-
-.ths-carousel {
+.ths-jumbotron {
     margin-bottom: 42px;
-}
-
-.ths-slide {
-    height: 320px;
+    min-height: 320px;
     background-color: #438bc9;
     color: white;
-    font-weight: 300;
     font-size: 18px;
-    padding: 22px 6%;
+    padding: 12px 22px;
 }
 
-.ths-slide-caption {
-    font-size: 2.6em;
+.ths-jumbotron h1 {
+    font-weight: 300;
+}
+
+@media screen and (max-width: 410px) {
+    .ths-jumbotron {
+        margin: 0 -20px 42px;
+    }
+}
+
+.ths-jumbotron-content {
+    min-height: 180px;
 }
 
 .ths-index-icon {
@@ -92,6 +92,21 @@ img {
 .ths-index-scheme {
     margin: 32px auto;
     display: block;
+}
+
+.btn-outline-inverse {
+    background-color: transparent;
+    border-color: #cdbfe3;
+    color: #fff;
+    margin-bottom: 8px;
+    font-weight: 300;
+}
+.btn-outline-inverse:hover, .btn-outline-inverse:focus, .btn-outline-inverse:active {
+    background-color: #fff;
+    border-color: #fff;
+    color: #5d9bd1;
+    -ms-text-shadow: none;
+    text-shadow: none;
 }
 
 
