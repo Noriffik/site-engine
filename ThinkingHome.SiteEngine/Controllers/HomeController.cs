@@ -15,11 +15,13 @@ namespace ThinkingHome.SiteEngine.Controllers
             _appEnvironment = appEnvironment;
         }
 
+        [ResponseCache(Duration = 60)]
         public ActionResult Index()
         {
             return View();
         }
 
+        [ResponseCache(Duration = 60)]
         public ActionResult Md(string path)
         {
             if (string.IsNullOrEmpty(path))
