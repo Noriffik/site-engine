@@ -61,6 +61,19 @@ img {
     color: #5d9bd1;
 }
 
+.nav-download a {
+    color: #fff;
+    background-color: #438bc9;
+    border-color: #438bc9;
+    white-space: nowrap;
+}
+
+.nav-download a:hover {
+    color: #fff;
+    background-color: #429BE6 !important;
+    border-color: #429BE6 !important;
+}
+
 .ths-jumbotron {
     margin-bottom: 42px;
     min-height: 320px;
@@ -116,7 +129,7 @@ img {
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 700px) {
     .nav-pills {
         margin-left: 0;
     }
