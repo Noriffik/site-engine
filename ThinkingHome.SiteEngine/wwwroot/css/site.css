@@ -63,24 +63,23 @@ img {
 
 .nav-download a {
     color: #fff;
-    background-color: #438bc9;
-    border-color: #438bc9;
     white-space: nowrap;
+    background-color:#d9534f;
+    border-color: #d43f3a;
 }
 
 .nav-download a:hover {
     color: #fff;
-    background-color: #429BE6 !important;
-    border-color: #429BE6 !important;
+    background-color:#c9302c !important;
+    border-color: #ac2925 !important;
 }
 
 .ths-jumbotron {
     margin-bottom: 42px;
-    min-height: 320px;
     background-color: #438bc9;
     color: white;
     font-size: 18px;
-    padding: 12px 22px;
+    padding: 12px 22px 22px;
 }
 
 .ths-jumbotron h1 {
@@ -94,7 +93,7 @@ img {
 }
 
 .ths-jumbotron-content {
-    min-height: 180px;
+    min-height: 120px;
 }
 
 .ths-index-icon {
@@ -121,7 +120,6 @@ img {
     -ms-text-shadow: none;
     text-shadow: none;
 }
-
 
 @media screen and (max-width: 991px) {
     .nav-pills {

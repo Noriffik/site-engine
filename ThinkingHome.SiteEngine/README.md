@@ -3,7 +3,7 @@
 ## Обновление контента
 
 ```
-svn export https://github.com/dima117/thinking-home.git/trunk/doc content
+svn export https://github.com/thinking-home/site-content.git/trunk content
 ```
 
 ## todo
